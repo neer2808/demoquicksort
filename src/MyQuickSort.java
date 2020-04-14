@@ -5,14 +5,17 @@ public class MyQuickSort {
     if(start<end)
     {
       int pivot = partition(arr,start,end);
-
-      // it is for left array
+       // Recursive Call to the quick sort method
+      //  for left part
       quicksort(arr,start, pivot-1);
-      // it is for right array
+      //  for right part
       quicksort(arr, pivot+1,end);
     }
 
   }
+
+  // Main logic of quick sort Algorithm
+  // where we find the appropriate place of pivot element and partition the array
   public static int partition (int arr[], int p, int q)
   {
     int pivot = q;
@@ -26,11 +29,9 @@ public class MyQuickSort {
         arr[i] = arr[j];
         arr[j]= temp;
       }
-
     }
     return i ;
   }
-
   public static void display(int arr[])
   {
     for(int i =0;i<arr.length;i++)
