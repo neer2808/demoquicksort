@@ -1,3 +1,14 @@
+// Quick sort
+// This algorithm is similar to merge sort algorithm
+// it is also based on divide and conquer strategy
+// concept of quick stort algorithm is
+// At each step it finds "pivot" mand then make sure that all the smaller elements
+// are at left side of the pivot and all the bigger elements are at right side of the
+// pivot.
+// it does it recursively until the entire array is sorted
+// unlike merge sort it does not require esternal space
+
+
 public class MyQuickSort {
 
   public static void  quicksort(int[] arr, int start, int end)
